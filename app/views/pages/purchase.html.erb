@@ -1,0 +1,14 @@
+<h2>Purchase page</h2>
+<p>This is the purchase page</p>
+
+<%= form_tag(stripesubscription_path, method: "post") do %>
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key=<%= ENV["STRIPE_PUBLIC_KEY"] %>
+    data-amount="1000"
+    data-name="Demo Site"
+    data-description="Widget"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto">
+  </script>
+<% end %>
