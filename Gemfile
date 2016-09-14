@@ -5,7 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.6'
 
 gem 'pg', '~> 0.15'
-gem 'devise', '~> 3.5', '>= 3.5.6'
+gem 'devise', '~> 4.2'
+gem 'devise_invitable', '~> 1.7.0'
 gem 'activeadmin', '~> 1.0.0.pre4'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -34,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'dotenv-rails'
 end
 
 group :development do
